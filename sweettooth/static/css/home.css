@@ -1,0 +1,158 @@
+*{padding:0 ;
+    margin:0;
+    font-family:'Courier New', Courier, monospace;
+   
+    background-repeat:no-repeat;
+ 
+    box-sizing : boder-box}
+
+
+ body{
+    width: 100%;
+    height: 100vh;
+     
+     background:white;
+      background-image: url('/static/images/panna.jpg');
+      
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-left: 8%;
+      padding-right: 8%;
+      box-sizing: border-box;
+
+     
+    }
+.container{
+padding:12px;
+    background-color:#caf0f8;
+    border-radius:5px;
+    display:flex;
+}
+
+.menu__bar{    
+        height: 80px;
+        
+        display : flex;
+        padding-top : 40px;
+        padding-left: 2px;
+        padding-right:100px;
+        justify-content: space-between;}
+
+label.logo{font-size: 40px;
+           padding:0 90px;
+          font-weight: bolder;}
+
+
+.menu__bar ul li{list-style-type: none;}
+    
+    
+.menu__bar ul li{list-style-type: none;
+              display: inline-block;
+              margin:20px;
+              position: relative;
+            }
+             
+             
+            .menu__bar ul li a{ text-decoration:none;
+                color:#ff266b;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: medium;
+                padding :10px;
+                border-radius:15px;
+                
+            
+      }
+   .menu__bar ul li a:hover{
+      color :white;
+      background-color:#af0443;
+   }
+
+.row{
+  
+    display:flex ;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #af0443;
+    font-size:90px;
+}
+p{
+    color:white;
+    font-size: 11px;
+    line-height: 15px;
+    
+
+}
+
+
+button {
+    text-decoration: none;
+    width: 180px;
+    font-size: 12px;
+    padding:12px 0;
+    background-color:#af0443;
+    border-radius: 20px;
+    border:0;
+    outline: none;
+    margin-top: 30px;
+    
+}
+button a{text-decoration: none;
+         color:white}
+
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding:15px 25px ;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px 30px 40px;
+    background-position: center;
+    background-size:cover;
+    transition: transform 0.5s;
+
+
+}
+.card1{
+    
+    background-image: url('/static/images/Cream.jpg');
+}
+.card1 a{text-decoration: none;
+    color: black;
+}
+.card2{
+    
+    background-image: url('/static/images/apple.jpg');
+}
+.card2 a{
+    text-decoration:none;
+    color: black;
+}
+.card3{
+    
+    background-image: url('/static/images/coconut.jpg');
+}
+.card3 a{
+    text-decoration:none;
+    color: black;
+}
+.card4{
+    
+    background-image: url('/static/images/mango.jpg');}
+    .card4 a{
+        text-decoration:none;
+        color: black;
+    }
+.card:hover{
+    transform: translateY(-10px);
+}
+

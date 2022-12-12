@@ -1,0 +1,116 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+ }
+ 
+ 
+ .section{
+    width: 100%;
+ }
+ 
+ .section .container{
+    width: 80%;
+    display: block;
+    margin-left: 280px;
+    padding:50px 0px;
+ 
+ 
+ }
+ 
+ .container .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+ }
+ 
+ .container .title h1{
+    text-transform: uppercase;
+   
+    font-size: 35px;
+    color:white;}
+ 
+ .container .title h1::after{
+   content:"";
+   height: 5px;
+   width: 250px;
+   background-color:#ff266b;
+   border-radius: 25px;
+   display: block;
+  margin: auto;}
+ 
+ .content{
+    float: left;
+    width: 55%;
+ 
+ }
+ .image-section{
+    float: right;
+    width: 40%;
+ 
+ }
+ .image-section img{
+    width:60%;
+    height:auto;
+ 
+ }
+ .content .article h3{
+    color:#ff266b;
+    font-size: 18px;
+ }
+ 
+ .content .article p{
+    margin-top:20px ;
+    font-size: 16px;
+    line-height: 1.5;
+    color:white;
+ }
+ .content .article .button{
+    margin-top: 50px;}
+    
+ .content .article .button a{ 
+    text-decoration: none;
+    padding: 8px 25px;
+    border-radius: 40px;
+    background-color:#af0443;
+    color:white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+    margin: 4px;
+    
+ }
+ .content .article .button a:hover{ 
+     background-color: #37c899;
+     color: aliceblue;
+     transition:1s ease;}
+ 
+  .container .social{
+    width: 100%;
+    clear:both;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+  }  
+     
+ .container .social i{
+    color:white;
+    font-size: 22px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+ text-align: center;
+ background-color: #af0443;
+ margin: 0px 5px;
+ }
+ 
+ .container .social i:hover{
+     color:aliceblue;
+     background-color:#37c899;
+     transition: 1s ease;
+     transform: rotate(360deg);   
+ }
+    

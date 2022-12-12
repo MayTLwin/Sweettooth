@@ -1,0 +1,101 @@
+
+
+ 
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+
+<head>
+    <meta charset = "UTF-8">
+
+    <title>Sweet Tooth</title>
+  <link rel ="stylesheet" href = "{% static '/css/home.css' %}"/>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+
+    
+
+ <div class = "menu__bar">
+
+    
+
+        <label class="logo"><span style = "color:white"> SweeT</span><span style ="color:#ff266b">Tooth</span></label>
+       
+    <ul>    
+        <li><a href = "#">Home</a></li>
+        <li><a href = "http://localhost:8000/recipe/">Recipe</a>
+
+
+         
+        
+        </li>          
+        
+                
+        <li><a href = "http://localhost:8000/contact/" >Contact Us</a></li>
+        <li><a href ="http://localhost:8000/about/" >About us</a></li>
+        
+ 
+
+        </ul>
+
+    </div>
+    <div class = "container">
+    {% if user.is_authenticated %}
+    <div class="alert alert-success" role="alert">
+        <h3><span style = "color:white">Welcome</span><span style ="color:maroon">{{ user.username }}!</span></h3>
+        <a class = 'logout' href="{% url 'logout' %}">Logout</a>
+    </div>
+{% else %}
+    <div class="alert alert-success" role="alert">
+        <h3 style = "color:white">Welcome!</h3>
+        <a href="{% url 'register' %}">Signup</a>
+        <a href="{% url 'login' %}"><i class="bi bi-person-check-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+  <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>Login</i></a>
+    </div>
+
+{% endif %}
+</div>
+<div class = "row">
+     <div class = "col">
+        <h1>Easy & Yummy Desserts</h1>
+        <p>Our recipes are very easy to make and healthy.You can also make vegetatian desserts,which are very popular nowadays.
+            Ex amet Lorem adipisicing in elit dolor pariatur reprehenderit.Qui aliquip est exercitation mollit est sunt ipsum enim. Fugiat fugiat proident nisi qui sit. Officia ullamco amet ad consectetur et nisi non dolore eiusmod. Eu dolor occaecat id non excepteur cillum sit do quis ex veniam amet. Consequat id pariatur nisi culpa qui sint nisi non est fugiat eu cillum.<p>
+    
+         <button type ="button"><a href="http://localhost:8000/recipe/">Let's start</a></button>  
+         <button type ="button"><a href ="http://localhost:8000/about/"> About Us</a></button>     
+
+       </div>
+     <div class = "col">
+        
+        <div class = "card card1">
+            <h5><a href ="#">Crème Brûlée</a></h5>
+           
+        </div>   
+        
+        <div class = "card card2">
+           <h5><a href ="http://localhost:8000/recipe/detail/1">Apple pie</a></h5>
+            
+        </div> 
+
+        <div class = "card card3">
+            <h5><a href ="#">Coconut Panna Cotta</h5>
+         
+        </div>
+
+        <div class = " card card4">
+            <h5><a href=" http://localhost:8000/recipe/detail/2">Vegan Mango ice-cream</a></h5>
+            
+        </div>
+        
+        
+    
+    </div>
+   
+</body>
+
+    </html>

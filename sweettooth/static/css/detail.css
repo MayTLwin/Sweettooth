@@ -1,0 +1,42 @@
+.button {
+    margin-top: 50px;
+    padding: 0 ;}
+.button a{ 
+    text-decoration: none;
+    
+    text-transform: uppercase;
+    border-bottom:solid 2px white;
+    color:grey;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+    margin: 4px;
+}
+
+.button a:hover{
+    color:#ff266b;
+    
+    transition: 0.1s;
+}
+
+body{
+ background-color: white;
+}
+.share-btn-container{
+  
+padding: 8px;
+    display : flex;
+ 
+    justify-content:center;
+margin-bottom: 20px;
+
+
+} 
+
+.btn-primary{
+    justify-content: center;
+}
+.share-btn-container a{
+   margin-top: 20px;
+    margin-left: 20px;
+}
